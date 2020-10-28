@@ -1,5 +1,29 @@
 <html>
-<body>
-  <div>imsse-net v.0.0.1-alpha</div>
-</body>
+  <head>
+    <link rel="stylesheet" href="css/primitive.css">
+  </head>
+  <body>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="First Name">
+      <input type="text" id="name" placeholder="Name" class="has-error">
+    <input type="email" id="email" placeholder="Email" class="is-success">
+      <label for="choose">Background</label>
+      <select id="choose">
+        <option disabled selected>Please select</option>
+        <option value="option-1">scientific/technical background</option>
+        <option value="option-2">other background</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message"></textarea>
+      <label>
+        <input type="checkbox">
+        I accept the GDPR of the European Union and transmit all rights through the data processor to the data owner.
+      </label>
+      <input type="submit" value="Submit">
+    </form>
+
+    <div>imsse-net v.0.0.2-alpha</div>
+  </body>
 </html>
