@@ -1,13 +1,12 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="preload" href="js/modernizr.js" />    
+    <link rel="preload" href="js/modernizr.js" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/primitive.css" />
-    <link rel="stylesheet" href="css/imsse-net.css" />    
+    <link rel="stylesheet" href="css/imsse-net.css" />
   </head>
   <body>
-
     <h1>IMSSE: International Mission for Scientific Space Exploration</h1>
     <p>
       Space exploration, the investigation, by means of crewed and uncrewed
@@ -20,8 +19,12 @@
     <p>{contact technical department}</p>
 
     <ul>
-      <li>B-VIE-2027: funding pending</li>
+      <li>P-BER-2023: funding pending</li>
       <li>E-VIE-2025: funding pending</li>
+      <li>B-BER-2027: funding pending</li>
+      <li>B-VIE-2027: funding pending</li>      
+      <li>S-VIE-2030: funding pending</li>
+      <li>S-BER-2033: funding pending</li>
     </ul>
 
     <h2>Tooling</h2>
@@ -31,20 +34,23 @@
     <p>{currently offline}</p>
 
     <form>
-      <label for="name">Base Data</label>
-      <input type="text" id="name" placeholder="Name" />
-      <input type="email" id="email" placeholder="Email" />
-      <label for="choose">Background</label>
-      <select id="choose">
-        <option disabled selected>Please select</option>
-        <option value="option-1">scientific/technical background</option>
-        <option value="option-2">other background</option>
-      </select>
+      <label for="base">Base Data</label>
+      <div id="base">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <select id="choose">
+          <option disabled selected>-</option>
+          <option value="option-1">scientific/technical background</option>
+          <option value="option-2">financial/business background</option>
+          <option value="option-3">undefined or other background</option>
+        </select>
+      </div>
       <label for="message">Message</label>
       <textarea id="message"></textarea>
       <label>
         <input type="checkbox" />
-        I accept given rights granted in the GDPR of the European Union (worldwide valid) and allow full usage rights on my data to IMSSE.
+        I accept given rights granted in the GDPR of the European Union
+        (worldwide valid) and allow full usage rights on my data to IMSSE.
       </label>
       <input type="submit" value="Submit" />
     </form>
@@ -53,9 +59,21 @@
     <ul>
       <li>https://www.esa.int/</li>
       <li>https://www.planetary.org/</li>
-      <li>https://www.isunet.edu/</li>      
+      <li>https://www.isunet.edu/</li>
     </ul>
 
-    <div><label>imsse-net v.0.0.7-alpha</label></div>
+
+    <h2>Technical</h2>
+    <h3>PGP/GPG</h3>
+    <p>E-Mail Public-Key</p>
+    <p>{currently offline}</p>
+
+    <h3>Donate</h3>
+    <ul>
+      <li>Bitcoin: </li>
+      <li>Ethereum: </li>
+    </ul>
+
+    <div><label>imsse-net v.0.0.7-alpha</label></div>    
   </body>
 </html>
